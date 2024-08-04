@@ -6,8 +6,47 @@
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
-    <title>Page 2</title>
+    <title> My Projects</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .project-tile {
+            text-align: center;
+            font-size: 60px;
+        }
+        .project-sub {
+            text-align: center;
+            font-size: 30px;
+            position: relative;
+            bottom: 20px;
+        }
+        #projects {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+            margin-top: 30px;
+            align-items: center;
+        }
+        .contact-title {
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 70px;
+        }
+        .project-images {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            position: relative;
+            top: -50px;
+        }
+        .project-images a {
+            display: block;
+        }
+        .project-images img {
+            display: block;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
 
@@ -15,15 +54,30 @@
     <div class="menu-button">Menu ☰</div>
     <div class="menu-links">
         <a href="index.html">Home</a>
-        <a href="Page2.html">Page 2</a>
+        <a href="Page2.html">My Projects!</a>
         <a href="SocialLinks.html">My Social Links!</a>
     </div>
 </div>
 
 <div class="content">
-    <h1> Page 2</h1>
-    <p>This page contains more information about what a business would.</p>
+    <h1>My Projects!</h1>
 </div>
+<section id="projects">
+    <h1 class="project-tile">Here are my projects!</h1>
+    <p class="project-sub">Click on each image to view the game! You can view my other projects on my <a id="profile-link" href="./SocialLinks.html">other links</a></p>
+
+    <div class="project-images">
+        <a href="https://studio.code.org/projects/gamelab/w4DtHetgtE-UUN9Me4d0n7CX70wIAK9h1oSk9sOYT7M">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZMUjykRdFAU8lVuhkFfZ15EeMjHM0SmNPJA&s" alt="Project 1">
+        </a>
+        <a href="https://studio.code.org/projects/gamelab/1i4QsUolBdo9aES_ltwjdDCo-XeRb3IPVGWuVT-LdBE">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThxU_TBD6POSQIZtF6bExAPRRoHt89QZSxPQ&s" alt="Project 2">
+        </a>
+        <a href="https://studio.code.org/projects/gamelab/xzMo-pFl42TPYsqwCgaAeX96SqdMdW5AmgPsD7TW7yA">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReLKF5hFBkvvu63iYbvGNWWnoTCLGLXNdR4w&s" alt="Project 3">
+        </a>
+    </div>
+</section>
 
 <script src="script.js"></script>
 </body>
